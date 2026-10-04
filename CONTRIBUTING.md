@@ -15,3 +15,5 @@
 5. PR 描述写清问题、改动和验证结果；如只完成静态检查，请直接说明。
 
 请只贡献有权按本仓库 MIT 许可证发布的内容，并保留必要来源说明。
+
+`docs/reference/freertos-stm32-framework-original.md` 是保留的第三方原文，许可范围见 [NOTICE.md](NOTICE.md)。技术勘误或适配建议请单独说明，不直接改写这份原始记录。

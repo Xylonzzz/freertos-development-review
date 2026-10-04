@@ -131,6 +131,11 @@ freertos-development-review/
 ├── README.md
 ├── LICENSE
 ├── CONTRIBUTING.md
+├── NOTICE.md
+├── docs/
+│   └── reference/
+│       ├── README.md
+│       └── freertos-stm32-framework-original.md
 └── skills/
     └── freertos-development-review/
         ├── SKILL.md
@@ -158,10 +163,14 @@ freertos-development-review/
 
 欢迎提交有最小复现材料的 Issue 或 PR，尤其是版本差异、遗漏的失败路径，以及会让 Skill 误判的真实案例。提交方式与验证要求见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
+公开仓库允许读者 Fork 到自己的账号，在自己的分支上修改并提交 Pull Request。PR 是合并建议，不会自动改变本仓库；由维护者审阅后决定是否合并。未获仓库写权限的贡献者不能直接推送到本仓库。具体流程见 [GitHub 官方说明](https://docs.github.com/en/pull-requests/reference/pull-requests)。
+
 ## 来源与许可
 
 最初的工程思路来自一位业界工程师分享的《RTOS_企业级嵌入式框架_FreeRTOS_STM32_Demo.md》。本项目将其中的方法提炼为开发与审阅流程，并结合试用补充同步、返回值、数据质量、故障送达和验证边界。原作者的公开署名和公开链接未提供，因此不作推测；参考资料中的章节号用于记录这份来源。
 
-仓库不分发原教程全文、FreeRTOS 内核或其他第三方实现。原教程和外部资料保留各自权利；本仓库的 MIT 许可不对这些外部材料重新授权。API 细节应查阅 [FreeRTOS 官方文档](https://www.freertos.org/Documentation/00-Overview)，本项目与 FreeRTOS、OpenAI 无官方隶属或背书关系。
+原始 Markdown 已按原样收录为 [freertos-stm32-framework-original.md](docs/reference/freertos-stm32-framework-original.md)，其文件名、校验值与阅读说明见 [原文说明](docs/reference/README.md)。它是经验教程和示例代码的来源资料；使用示例前仍须核实目标工程的 API、资源、时序和异常处理。
 
-本仓库中维护的 Skill 指令和配套文档采用 [MIT License](LICENSE)。
+**许可范围：**原始教程不在本仓库 MIT 授权范围内。其作者署名和单独的再许可条款尚未提供，原作者保留相应权利；收录不代表授予读者 MIT 使用权。详见 [NOTICE.md](NOTICE.md)。仓库不包含 FreeRTOS 内核；API 细节应查阅 [FreeRTOS 官方文档](https://www.freertos.org/Documentation/00-Overview)，本项目与 FreeRTOS、OpenAI 无官方隶属或背书关系。
+
+除上述原始教程外，本仓库中维护的 Skill 指令和配套文档采用 [MIT License](LICENSE)。
