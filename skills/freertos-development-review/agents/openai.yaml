@@ -1,0 +1,3 @@
+interface:
+  display_name: "FreeRTOS 开发与审阅"
+  short_description: "FreeRTOS 开发与审阅：任务通信、模块实现、故障处理及验证"
